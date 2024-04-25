@@ -37,12 +37,37 @@
       <p>waikiki beach</p>
     </header>
     <section class="availability">
-      <!-- faltan 3 flechitas abajo -->
-      <!-- con p o ul/li?? -->
-      <p>ARRIVE AT</p>
-      <p>DEPART AT</p>
-      <p>GUESTS</p>
-      <button type="submit">BOOK NOW</button>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ARRIVE AT
+        </button>
+        <ul class="dropdown-menu">
+          <input type="datetime-local" id="arrival" name="arrival">
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          DEPART AT
+        </button>
+        <ul class="dropdown-menu">
+           <input type="datetime-local" id="departure" name="departure">
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          GUESTS
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button">One</button></li>
+          <li><button class="dropdown-item" type="button">Two</button></li>
+          <li><button class="dropdown-item" type="button">Three</button></li>
+          <li><button class="dropdown-item" type="button">Four</button></li>
+          <li><button class="dropdown-item" type="button">Five</button></li>
+          <li><button class="dropdown-item" type="button">Six</button></li>
+          <li><button class="dropdown-item" type="button">More</button></li>
+        </ul>
+      </div>
+        <button type="submit">BOOK NOW</button>
     </section>
     <section class="description">
       <h3>ONLY AT HALOALO RESORT</h3>
