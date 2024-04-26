@@ -10,19 +10,19 @@ header {
   background-repeat: no-repeat;
 }
 
-.events {
+#events {
   background-color: rgba(97, 94, 94, 0.993);
 }
 
-.suites {
+#suites {
   background-color: rgba(29, 28, 28, 0.938);
 }
 
-.dining {
+#dining {
   background-color: rgba(97, 94, 94, 0.993);
 }
 
-.weddings {
+#weddings {
   background-color: rgba(29, 28, 28, 0.938);
 }
 
