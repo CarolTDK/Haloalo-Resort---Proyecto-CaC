@@ -75,3 +75,16 @@ form {
   /* opacity: 0.5; */
   padding: 8rem 30rem;
 }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
