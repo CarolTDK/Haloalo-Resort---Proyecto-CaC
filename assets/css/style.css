@@ -129,9 +129,9 @@ html {
   align-items: center; */
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
   background-color: grey;
-}
+} */
 
 .submit {
   background-color: #c5bd08;
@@ -140,6 +140,31 @@ html {
   border-radius: 2.37rem;
   padding: 1rem;
 }
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 99vw;
+  /* gap: 20px;
+  background-color: #ad5f5f; */
+}
+
+.main-item-1 {
+  background-color: #000000;
+  height: 15vh;
+  text-align: center;
+  align-content: center;
+}
+
+/* .main-item-2 {
+  background-color: #eee;
+  text-align: center;
+}
+
+.main-item-3 {
+  background-color: #eee;
+  text-align: center;
+} */
 
 .submit:hover {
   color: #c5bd08;
