@@ -4,11 +4,109 @@
   box-sizing: border-box;
 }
 
-header {
+html {
+  font-family: kiwi-maru-regular
+}
+
+.container-page {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 98.7vw;
+  grid-template-areas:
+    "header-nav"    
+    "availability"
+    "main"
+    "section-form"
+    "footer";
+}
+
+.header-nav {
+  grid-area: header-nav;
+  display: grid;
+  grid-template-columns: 100vw;  
+  grid-template-rows: 15vh 30vh 20vh 20vh;
+  height: 85vh;
+  background-image: url(/assets/imgs/Lifeisfun_r.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;  
+  align-content: center;
+}
+
+.header-nav-item-row1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  align-content: center;
+  font-size: 2vh;
+}
+
+#header-nav-item-row1-logo {
+  height: 15vh;
+}
+
+.header-nav-item-row1-1 {
+  padding-right: 2vw;
+  font-size: 3vh;
+  text-align: center;
+  align-content: end;
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+.nav-item {
+  margin: 0 1.4vw;
+  font-weight: 500;
+  font-size: 2.4vh;
+}
+
+.nav-link {
+  text-decoration-line: none;
+}
+
+.header-nav-item-row2 {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14vh;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  align-content: end;
+  grid-area: 2 / 1 / span 1 / span 8;
+}
+
+.header-nav-item-row3 {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14vh;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  align-content: center;
+  grid-area: 3 / 1 / span 1 / span 8;
+}
+
+.header-nav-item-row4 {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 6vh;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-content: start;
+  grid-area: 4 / 1 / span 1 / span 8;
+}
+
+/* header {
   background-image: url(/assets/imgs/Lifeisfun.png);
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .availability {
   width: 100vw;
