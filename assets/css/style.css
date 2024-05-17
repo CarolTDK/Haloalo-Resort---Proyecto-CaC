@@ -22,6 +22,7 @@ html {
     "availability"
     "main"
     "section-form"
+    "photogallery"
     "footer";
 }
 
@@ -220,7 +221,6 @@ form {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(217, 217, 217, 0.6);
-  /* opacity: 0.5; */
   padding: 4rem 9rem;
   margin: 2rem 4rem;
   width: 60.5rem;
@@ -249,4 +249,100 @@ form > input {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+}
+
+.photogallery {
+  grid-area: photogallery;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 30% 40% 5% auto;
+  background-color: #D9D9D9;
+  height: 25vh;
+  text-align: center;  
+}
+
+.footer-item-row1 {
+  align-content: center;
+  font-size: 2.4vh;
+}
+
+.item-footer { 
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.list-footer {
+  font-size: 2.4  vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item-row2 {
+  align-content: center;
+}
+
+iframe {
+  width: 35vw;
+  height: 20vh;
+}
+
+.footer-item-row3 {
+  align-content: center;
+}
+
+.item-redes-row1 {
+  padding-left: 30px;
+  align-content: center;
+}
+
+.item-redes-row2 {
+  align-content: center;
+}
+
+#list-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly ;
+  align-items: flex-start;
+  list-style: none;
+  font-size: 6vh;
+}
+
+.fa-brands {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.fa-solid {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 96px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+p {
+  color: white;
 }
