@@ -16,7 +16,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 98.7vw;
+  grid-template-columns: 99vw;
   grid-template-areas:
     "header-nav"    
     "availability"
@@ -28,7 +28,7 @@ html {
 .header-nav {
   grid-area: header-nav;
   display: grid;
-  grid-template-columns: 100vw;  
+  grid-template-columns: 99vw;  
   grid-template-rows: 15vh 30vh 20vh 20vh;
   height: 85vh;
   background-image: url(/assets/imgs/Lifeisfun_r.png);
@@ -109,16 +109,26 @@ html {
 } */
 
 .availability {
-  width: 100vw;
+  grid-area: availability;
+  height: 15vh;
+  background-color: rgba(97, 94, 94, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  /* width: 100vw;
   background-color: rgba(97, 94, 94, 0.993);
   padding: 4rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 3rem;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
 }
+
 .dropdown-menu {
   background-color: grey;
 }
