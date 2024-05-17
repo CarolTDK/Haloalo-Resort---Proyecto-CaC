@@ -196,13 +196,14 @@ p {
 }
 
 section#form {
-  background-image: url(../imgs/beachform.jfif);
+  background-image: url(../imgs/beachform_r.jpg);
+  /* background-image: url(../imgs/beachform.jfif); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
-  padding-right: 4rem;
+  padding-right: 10rem;
   padding-left: 10rem;
 }
 
