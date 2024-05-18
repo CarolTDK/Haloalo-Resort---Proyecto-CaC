@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: kiwi-maru-regular
+  font-family: kiwi-maru-regular;
 }
 
 .container-page {
@@ -18,7 +18,7 @@ html {
   display: grid;
   grid-template-columns: 99vw;
   grid-template-areas:
-    "header-nav"    
+    "header-nav"
     "availability"
     "main"
     "section-form"
@@ -29,14 +29,14 @@ html {
 .header-nav {
   grid-area: header-nav;
   display: grid;
-  grid-template-columns: 99vw;  
+  grid-template-columns: 99vw;
   grid-template-rows: 15vh 30vh 20vh 20vh;
   height: 85vh;
   background-image: url(/assets/imgs/Lifeisfun_r.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;  
+  text-align: center;
   align-content: center;
 }
 
@@ -265,9 +265,9 @@ form > input {
   grid-area: footer;
   display: grid;
   grid-template-columns: 30% 40% 5% auto;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   height: 25vh;
-  text-align: center;  
+  text-align: center;
 }
 
 .footer-item-row1 {
@@ -275,13 +275,13 @@ form > input {
   font-size: 2.4vh;
 }
 
-.item-footer { 
+.item-footer {
   margin-left: 0;
   margin-right: 0;
 }
 
 .list-footer {
-  font-size: 2.4  vh;
+  font-size: 2.4 vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -316,7 +316,7 @@ iframe {
 #list-redes {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
   align-items: flex-start;
   list-style: none;
   font-size: 6vh;
@@ -346,4 +346,22 @@ h2 {
 
 p {
   color: white;
+}
+/**********************/
+.caracteristicas {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 600px 50px 600px;
+  grid-template-rows: 600px;
+}
+.caracteristicas h3 {
+  text-align: center;
+  color: rgba(197, 189, 8, 0.86);
+}
+
+.caracteristicas img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
