@@ -4,26 +4,135 @@
   box-sizing: border-box;
 }
 
-header {
+html {
+  font-family: kiwi-maru-regular;
+}
+
+.container-page {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 99vw;
+  grid-template-areas:
+    "header-nav"
+    "availability"
+    "main"
+    "section-form"
+    "photogallery"
+    "footer";
+}
+
+.header-nav {
+  grid-area: header-nav;
+  display: grid;
+  grid-template-columns: 99vw;
+  grid-template-rows: 15vh 30vh 20vh 20vh;
+  height: 85vh;
+  background-image: url(/assets/imgs/Lifeisfun_r.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-content: center;
+}
+
+.header-nav-item-row1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  align-content: center;
+  font-size: 2vh;
+}
+
+#header-nav-item-row1-logo {
+  height: 15vh;
+}
+
+.header-nav-item-row1-1 {
+  padding-right: 2vw;
+  font-size: 3vh;
+  text-align: center;
+  align-content: end;
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+.nav-item {
+  margin: 0 1.4vw;
+  font-weight: 500;
+  font-size: 2.4vh;
+}
+
+.nav-link {
+  text-decoration-line: none;
+}
+
+.header-nav-item-row2 {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14vh;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  align-content: end;
+  grid-area: 2 / 1 / span 1 / span 8;
+}
+
+.header-nav-item-row3 {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14vh;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  align-content: center;
+  grid-area: 3 / 1 / span 1 / span 8;
+}
+
+.header-nav-item-row4 {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 6vh;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-content: start;
+  grid-area: 4 / 1 / span 1 / span 8;
+}
+
+/* header {
   background-image: url(/assets/imgs/Lifeisfun.png);
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .availability {
-  width: 100vw;
+  grid-area: availability;
+  height: 15vh;
+  background-color: rgba(97, 94, 94, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  /* width: 100vw;
   background-color: rgba(97, 94, 94, 0.993);
   padding: 4rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 3rem;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
 }
-.dropdown-menu {
+
+/* .dropdown-menu {
   background-color: grey;
-}
+} */
 
 .submit {
   background-color: #c5bd08;
@@ -32,6 +141,31 @@ header {
   border-radius: 2.37rem;
   padding: 1rem;
 }
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 99vw;
+  /* gap: 20px;
+  background-color: #ad5f5f; */
+}
+
+.main-item-1 {
+  background-color: #000000;
+  height: 15vh;
+  text-align: center;
+  align-content: center;
+}
+
+/* .main-item-2 {
+  background-color: #eee;
+  text-align: center;
+}
+
+.main-item-3 {
+  background-color: #eee;
+  text-align: center;
+} */
 
 .submit:hover {
   color: #c5bd08;
@@ -62,13 +196,14 @@ p {
 }
 
 section#form {
-  background-image: url(../imgs/beachform.jfif);
+  background-image: url(../imgs/beachform_r.jpg);
+  /* background-image: url(../imgs/beachform.jfif); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
-  padding-right: 4rem;
+  padding-right: 10rem;
   padding-left: 10rem;
 }
 
@@ -87,7 +222,6 @@ form {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(217, 217, 217, 0.6);
-  /* opacity: 0.5; */
   padding: 4rem 9rem;
   margin: 2rem 4rem;
   width: 60.5rem;
@@ -116,4 +250,118 @@ form > input {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+}
+
+.photogallery {
+  grid-area: photogallery;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 30% 40% 5% auto;
+  background-color: #d9d9d9;
+  height: 25vh;
+  text-align: center;
+}
+
+.footer-item-row1 {
+  align-content: center;
+  font-size: 2.4vh;
+}
+
+.item-footer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.list-footer {
+  font-size: 2.4 vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item-row2 {
+  align-content: center;
+}
+
+iframe {
+  width: 35vw;
+  height: 20vh;
+}
+
+.footer-item-row3 {
+  align-content: center;
+}
+
+.item-redes-row1 {
+  padding-left: 30px;
+  align-content: center;
+}
+
+.item-redes-row2 {
+  align-content: center;
+}
+
+#list-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style: none;
+  font-size: 6vh;
+}
+
+.fa-brands {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.fa-solid {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 96px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+p {
+  color: white;
+}
+/**********************/
+.caracteristicas {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 600px 50px 600px;
+  grid-template-rows: 600px;
+}
+.caracteristicas h3 {
+  text-align: center;
+  color: rgba(197, 189, 8, 0.86);
+}
+
+.caracteristicas img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
