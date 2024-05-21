@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: kiwi-maru-regular;
-}
-
 .container-page {
   font-family: "Kiwi Maru", serif;
   font-weight: 400;
@@ -142,13 +138,11 @@ html {
   padding: 1rem;
 }
 
-.main {
+/* .main {
   grid-area: main;
   display: grid;
   grid-template-columns: 99vw;
-  /* gap: 20px;
-      background-color: #ad5f5f; */
-}
+} */
 
 .main-item-1 {
   background-color: #000000;
@@ -156,16 +150,6 @@ html {
   text-align: center;
   align-content: center;
 }
-
-/* .main-item-2 {
-      background-color: #eee;
-      text-align: center;
-    }
-    
-    .main-item-3 {
-      background-color: #eee;
-      text-align: center;
-    } */
 
 .submit:hover {
   color: #c5bd08;
@@ -197,7 +181,6 @@ p {
 
 section#form {
   background-image: url(../imgs/beachform_r.jpg);
-  /* background-image: url(../imgs/beachform.jfif); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,7 +235,7 @@ form > input {
   margin-bottom: 2rem;
 }
 
-.photogallery {
+#photogallery {
   grid-area: photogallery;
   background-color: black;
   display: flex;
@@ -261,7 +244,7 @@ form > input {
   flex-wrap: wrap;
 }
 
-.footer {
+footer {
   grid-area: footer;
   display: grid;
   grid-template-columns: 30% 40% 5% auto;
@@ -319,7 +302,7 @@ iframe {
   justify-content: space-evenly;
   align-items: flex-start;
   list-style: none;
-  font-size: 6vh;
+  font-size: 4vh;
 }
 
 .fa-brands {
