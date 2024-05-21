@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD INICIO -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haloalo Resort</title>
+
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
-    <!-- link google fonts -->
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/logo_haloalo_05_sin_fondo_sm.ico"
+      type="image/x-icon"
+    />
+    <!-- <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon"> -->
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    />
-    <!-- Fontawesome -->
+    > -->
+
+    <!-- FONTAWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -21,234 +43,370 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- link css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Haloalo Resort</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#events">EVENTS</a></li>
-          <li><a href="#suites">ROOMS & SUITES</a></li>
-          <li><a href="#dining">DINING & DRINKS</a></li>
-          <li><a href="#weddings">WEDDINGS</a></li>
-          <!-- A qué se refiere offers? -->
-          <li>OFFERS</li>
-          <!-- Make a Reservation es link, botón o qué? Se lo puse al formulario-->
-          <li><a href="#form">MAKE A RESERVATION</a></li>
-        </ul>
-      </nav>
-      <h1>HALOALO RESORT</h1>
-      <p>waikiki beach</p>
-    </header>
-    <section class="availability" class="container">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          ARRIVE AT
-        </button>
-        <ul class="dropdown-menu">
-          <input type="datetime-local" id="arrival" name="arrival">
-        </ul>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          DEPART AT
-        </button>
-        <ul class="dropdown-menu">
-           <input type="datetime-local" id="departure" name="departure">
-        </ul>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          GUESTS
-        </button>
-        <ul class="dropdown-menu">
-          <li><button class="dropdown-item" type="button">One</button></li>
-          <li><button class="dropdown-item" type="button">Two</button></li>
-          <li><button class="dropdown-item" type="button">Three</button></li>
-          <li><button class="dropdown-item" type="button">Four</button></li>
-          <li><button class="dropdown-item" type="button">Five</button></li>
-          <li><button class="dropdown-item" type="button">Six</button></li>
-          <li><button class="dropdown-item" type="button">More</button></li>
-        </ul>
-      </div>
-        <button class="submit" type="submit">BOOK NOW</button>
-    </section>
-    <section class="description">
-      <h3>ONLY AT HALOALO RESORT</h3>
-      <article id="events">
-        <img
-          src="assets/imgs/events.png"
-          alt=""
-        />
-        <h3>EVENTS</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo
-          consequuntur obcaecati aperiam sapiente quod. Possimus quae aliquid
-          soluta quasi autem perspiciatis. Ducimus, explicabo! Odit non
-          consequuntur delectus eos quam. Beatae, hic? Nulla et obcaecati
-          nostrum maiores ratione eligendi quod porro, quas eius quibusdam
-          accusantium nihil deleniti sit tempore beatae, at ipsa voluptas iure
-          nobis. Rerum doloribus aliquid exercitationem minus? Eius dolorem
-          illum ut illo architecto aliquid dolor veniam aliquam velit veritatis
-          cumque nihil quas debitis, ullam, adipisci maxime provident quisquam,
-          dolorum tempora atque exercitationem eligendi. Consectetur laboriosam
-          placeat assumenda.
-        </p>
-      </article>
-      <article id="suites">
-        <img
-          src="assets/imgs/suites.jfif"
-          alt=""
-        />
-        <h3>SUITES</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo
-          consequuntur obcaecati aperiam sapiente quod. Possimus quae aliquid
-          soluta quasi autem perspiciatis. Ducimus, explicabo! Odit non
-          consequuntur delectus eos quam. Beatae, hic? Nulla et obcaecati
-          nostrum maiores ratione eligendi quod porro, quas eius quibusdam
-          accusantium nihil deleniti sit tempore beatae, at ipsa voluptas iure
-          nobis. Rerum doloribus aliquid exercitationem minus? Eius dolorem
-          illum ut illo architecto aliquid dolor veniam aliquam velit veritatis
-          cumque nihil quas debitis, ullam, adipisci maxime provident quisquam,
-          dolorum tempora atque exercitationem eligendi. Consectetur laboriosam
-          placeat assumenda.
-        </p>
-      </article>
-      <article id="dining">
-        <img
-          src="assets/imgs/dininganddrinks.jpg"
-          alt=""
-        />
-        <h3>DINING & DRINKS</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo
-          consequuntur obcaecati aperiam sapiente quod. Possimus quae aliquid
-          soluta quasi autem perspiciatis. Ducimus, explicabo! Odit non
-          consequuntur delectus eos quam. Beatae, hic? Nulla et obcaecati
-          nostrum maiores ratione eligendi quod porro, quas eius quibusdam
-          accusantium nihil deleniti sit tempore beatae, at ipsa voluptas iure
-          nobis. Rerum doloribus aliquid exercitationem minus? Eius dolorem
-          illum ut illo architecto aliquid dolor veniam aliquam velit veritatis
-          cumque nihil quas debitis, ullam, adipisci maxime provident quisquam,
-          dolorum tempora atque exercitationem eligendi. Consectetur laboriosam
-          placeat assumenda.
-        </p>
-      </article>
-      <article id="weddings">
-        <img
-          src="assets/imgs/weddings.jfif"
-          alt=""
-        />
-        <h3>WEDDINGS</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo
-          consequuntur obcaecati aperiam sapiente quod. Possimus quae aliquid
-          soluta quasi autem perspiciatis. Ducimus, explicabo! Odit non
-          consequuntur delectus eos quam. Beatae, hic? Nulla et obcaecati
-          nostrum maiores ratione eligendi quod porro, quas eius quibusdam
-          accusantium nihil deleniti sit tempore beatae, at ipsa voluptas iure
-          nobis. Rerum doloribus aliquid exercitationem minus? Eius dolorem
-          illum ut illo architecto aliquid dolor veniam aliquam velit veritatis
-          cumque nihil quas debitis, ullam, adipisci maxime provident quisquam,
-          dolorum tempora atque exercitationem eligendi. Consectetur laboriosam
-          placeat assumenda.
-        </p>
-      </article>
-    </section>
-    <section id="form">
-      
-             <form>
-              <h4>STAY INFORMED</h4><br>
-          <label for="fname">FIRST NAME</label>
-          <input type="text" id="fname" name="fname"><br>
-          <label for="lname">LAST NAME</label>
-          <input type="text" id="lname" name="lname"><br>
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email"><br>
-          <div class="info">
-          <label for="info">More information:</label><br>
-          <select name="info" id="info">
-          <option value="promotions">Promotions</option>
-          <option value="events">Events</option>
-          <option value="all">All</option>
-          <option value="no-info">Please, don't send me information</option>
-          </select>
-          </div>
-          <div class="terms">
-          <input type="checkbox" id="terms" name="terms" value="Terms">
-          <label for="terms"> Accept Terms and Conditions ...</label><br>
-          </div>
-          <input class="submit" type="submit" value="SUSCRIBE">
 
-        </form>
-        
-    </section>
-    <section class="gallery">
-      <h4>CONNECT WITH HALOALO</h4>
-      <!-- Carrusel Bootstrap -->
-      <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/imgs/Flower.jfif" class="d-block w-100" alt="Yellow flower">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <!-- HEAD FIN -->
+
+  <!-- BODY INICIO -->
+  <body>
+    <!-- GRID PAGE ESTRUCTURE INICIO -->
+    <div class="container-page">
+      <!-- HEADER INICIO -->
+      <header>
+        <div class="header-nav">
+          <nav class="navbar navbar-expand-sm header-nav-item-row1">
+            <div class="container-fluid">
+              <img
+                id="header-nav-item-row1-logo"
+                src="/assets/imgs/logo_haloalo_05_sin_fondo_sm.png"
+              />
+              <div class="header-nav-item-row1-1">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsibleNavbar"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#events">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#suites">ROOMS & SUITES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#dining">DINING & DRINKS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#weddings">WEDDINGS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">OFFERS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#form">STAY INFORMED</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="header-nav-item-row2">HALOALO</div>
+          <div class="header-nav-item-row3">RESORT</div>
+          <div class="header-nav-item-row4">waikiki beach</div>
+        </div>
+      </header>
+      <!-- HEADER FIN -->
+
+      <!-- RESERVATION INICIO -->
+      
+      <div class="availability">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            ARRIVE AT
+          </button>
+          <ul class="dropdown-menu">
+            <input type="datetime-local" id="arrival" name="arrival" />
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            DEPART AT
+          </button>
+          <ul class="dropdown-menu">
+            <input type="datetime-local" id="departure" name="departure" />
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            GUESTS
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">One</button></li>
+            <li><button class="dropdown-item" type="button">Two</button></li>
+            <li><button class="dropdown-item" type="button">Three</button></li>
+            <li><button class="dropdown-item" type="button">Four</button></li>
+            <li><button class="dropdown-item" type="button">Five</button></li>
+            <li><button class="dropdown-item" type="button">Six</button></li>
+            <li><button class="dropdown-item" type="button">More</button></li>
+          </ul>
+        </div>
+        <button class="submit" type="submit">BOOK NOW</button>
+      </div>
+      <!-- RESERVATION FIN -->
+
+      <!-- MAIN INICIO -->
+
+      <section class="description">
+        <div class="main-item-1">
+          <h3 style="color: white">ONLY AT HALOALO RESORT</h3>
+        </div>
+
+        <div id="lista-secciones" class="secciones-flex">
+          <div id="events" class="caracteristicas">
+            <img src="assets/imgs/events.png" alt="" />
+
+            <div></div>
+
+            <div>
+              <div>
+                <h3>EVENTS</h3>
+                <p>
+                  At Haloalo Resort, we offer extensive event services designed to surpass the expectations of both groups and businesses. Our team of experts is dedicated to crafting unforgettable experiences, whether you're planning a high-level conference, a corporate meeting, or a distinctive social celebration.
+We provide a diverse range of event spaces, including elegant oceanfront ballrooms and tropical outdoor gardens, ensuring the perfect setting for your occasion. Our award-winning catering team will create a customized menu to delight your guests, while our attentive staff will handle every detail to ensure your event runs seamlessly.
+We understand that every event is unique, which is why we work closely with you to understand your specific needs and goals. At Haloalo Resort, we are committed to creating an event that exceeds your expectations.
+
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/imgs/Hotel-front.jfif" class="d-block w-100" alt="The front of the hotel">
+
+          <div id="suites" class="caracteristicas">
+            <div>
+              <h3>SUITES</h3>
+              <p>
+                Discover the epitome of luxury and comfort in the suites at Haloalo Resort. Our beautifully appointed suites offer an exquisite blend of modern elegance and tropical charm, providing an unparalleled experience for our guests.
+Each suite features spacious living areas, plush bedding, and private balconies with breathtaking ocean views or serene garden vistas. Thoughtfully designed with your comfort in mind, our suites are equipped with state-of-the-art amenities, including high-speed Wi-Fi, flat-screen TVs, and luxurious bath products.
+Whether you're here for a romantic getaway, a family vacation, or a business trip, our suites provide the perfect sanctuary. Our attentive staff is dedicated to ensuring that your stay is as comfortable and enjoyable as possible, attending to every detail with the utmost care.
+At Haloalo Resort, we believe in creating unforgettable experiences. That's why we offer personalized services, including in-room dining, concierge assistance, and tailored recommendations to help you make the most of your stay. Indulge in the ultimate escape and experience the luxury of our suites at Haloalo Resort.
+
+              </p>
+            </div>
+            <div></div>
+            <div>
+              <img src="assets/imgs/suites.jfif" alt="" />
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/imgs/Wedding-beach.jfif" class="d-block w-100" alt="Decoration for a wedding on the beach">
+
+          <div id="dining" class="caracteristicas">
+            <img src="assets/imgs/dininganddrinks.jpg" alt="" />
+            <div></div>
+            <div>
+              <h3>DINING & DRINKS</h3>
+              <p>
+                Embark on a culinary journey at Haloalo Resort, where our dining and drink options are designed to delight your senses. Our diverse selection of restaurants and bars offers something for every palate, from gourmet cuisine to casual beachside bites.
+Indulge in the finest flavors at our signature restaurant, where our world-class chefs create exquisite dishes using the freshest local ingredients. For a more relaxed experience, enjoy alfresco dining with stunning ocean views or savor tropical cocktails by the pool.
+Our award-winning culinary team is dedicated to providing exceptional dining experiences, with menus that showcase a blend of international and local flavors. Whether you're enjoying a romantic dinner, a family meal, or a casual snack, our attentive staff ensures that every meal is a memorable one.
+At Haloalo Resort, we understand that great dining is an essential part of your stay. That's why we offer a variety of dining options, including in-room dining, private beachside dinners, and themed nights that celebrate the rich culinary traditions of our region.
+Join us at Haloalo Resort for an unforgettable dining experience, where every meal is crafted to perfection and every drink is a celebration of paradise.
+
+              </p>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/imgs/Sunset-dinner.jfif" class="d-block w-100" alt="Table set for dinner at sunset on the beach">
+          <div id="weddings" class="caracteristicas">
+            <div>
+              <h3>WEDDINGS</h3>
+              <p>
+                Celebrate your love story at Haloalo Resort, where we specialize in creating magical weddings that are as unique as your romance. Our stunning oceanfront location, tropical gardens, and elegant venues provide the perfect backdrop for your special day.
+Our dedicated wedding planning team is committed to bringing your dream wedding to life, from intimate ceremonies to grand celebrations. We offer a range of customizable packages that cater to your every need, ensuring that every detail is flawlessly executed.
+Exchange your vows with the ocean as your witness, under a beautifully decorated arch on our pristine beach, or choose one of our elegant ballrooms for a more traditional setting. Our award-winning catering team will craft a bespoke menu that delights your guests and reflects your personal taste.
+At Haloalo Resort, we understand that every wedding is a deeply personal affair. That's why we work closely with you to understand your vision and bring it to fruition, offering personalized services including floral arrangements, décor, and entertainment.
+Let us help you create an unforgettable wedding day filled with love, joy, and cherished memories. At Haloalo Resort, your perfect wedding awaits.
+
+              </p>
+            </div>
+            <div></div>
+
+            <div>
+              <img src="assets/imgs/weddings.jfif" alt="" />
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </section>
+
+      <!---->
+      </div>
+      <!-- MAIN FIN -->
+
+      <!-- REGISTRATION FORM INICIO -->
+      <div class="section-form">
+        <section id="form">
+          <form>
+            <h4>STAY INFORMED</h4>
+            <br />
+            <label for="fname">FIRST NAME</label>
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="lname">LAST NAME</label>
+            <input type="text" id="lname" name="lname" /><br />
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" /><br />
+            <div class="info">
+              <label for="info">More information:</label><br />
+              <select name="info" id="info">
+                <option value="promotions">Promotions</option>
+                <option value="events">Events</option>
+                <option value="all">All</option>
+                <option value="no-info">
+                  Please, don't send me information
+                </option>
+              </select>
+            </div>
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" value="Terms" />
+              <label for="terms"> Accept Terms and Conditions ...</label><br />
+            </div>
+            <input class="submit" type="submit" value="SUSCRIBE" />
+          </form>
+        </section>
+      </div>
+      <!-- REGISTRATION FORM FIN -->
+
+      <!-- GALLERY INICIO -->
+<div>
+      <div class="photogallery">
+        <section class="gallery">
+          <h4>CONNECT WITH HALOALO</h4>
+          <!-- Carrusel Bootstrap -->
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/imgs/Flower.jfif"
+                  class="d-block w-100"
+                  alt="Yellow flower"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/imgs/Hotel-front.jfif"
+                  class="d-block w-100"
+                  alt="The front of the hotel"
+                />
+              </div>
+
+          <div class="carousel-item">
+            <img
+              src="assets/imgs/Wedding-beach.jfif"
+              class="d-block w-100"
+              alt="Decoration for a wedding on the beach"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/imgs/Sunset-dinner.jfif"
+              class="d-block w-100"
+              alt="Table set for dinner at sunset on the beach"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
-    <footer>
-      <p>HALOALO RESORT 000 KALAKAUA AVENUE HONOLULU, WAIKIKI HAWAII 96815</p>
-      <!-- Mapa de la ubicación -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14871.122395056307!2d-157.84299801910194!3d21.280150631713024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006df4e5c129af%3A0x4633ddc52a688878!2sWaikiki%2C%20Honolulu%2C%20Haw%C3%A1i%2096815%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1714083493460!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </iframe>
-      <p>ABOUT US</p>
-      <ul>
-        <li>Employment</li>
-        <li>FAQs</li>
-        <li>History</li>
-        <li>Safety</li>
-      </ul>
+  </div>
+  </div>
+  <!-- GALLERY FIN -->
+  <div>
+    <!-- FOOTER INICIO -->
+    <div class="footer">
+      <div class="footer-item-row1">
+        <ul id="item-footer">
+          <li class="list-footer">HALOALO RESORT</li>
+          <li class="list-footer">000 KALAKAUA AVENUE</li>
+          <li class="list-footer">HONOLULU, WAIKIKI</li>
+          <li class="list-footer">HAWAII 96815</li>
+        </ul>
+      </div>
+      <div class="footer-item-row2">
+        <!-- Mapa de la ubicación-->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14871.122395056307!2d-157.84299801910194!3d21.280150631713024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006df4e5c129af%3A0x4633ddc52a688878!2sWaikiki%2C%20Honolulu%2C%20Haw%C3%A1i%2096815%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1714083493460!5m2!1ses!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+      <div class="footer-item-row1"></div>
+      <div class="footer-item-row3">
+        <div class="item-redes-row1">
+          <h5 style="font-size: 3.6vh">FOLLOW US</h5>
+        </div>
+        <div class="item-redes-row2">
+          <ul id="list-redes">
+            <li>
+              <a
+                class="fa-brands fa-facebook-f fa-2xs"
+                href="https://www.facebook.com/"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="fa-solid fa-at fa-2xs"
+                href="mailto:info@haloaloresort.com"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="fa-brands fa-linkedin fa-2xs"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="fa-brands fa-instagram fa-2xs"
+                href="https://www.instagram.com/"
+                target="_blank"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <p>EXPERIENCE</p>
-      <ul>
-        <li>Gallery</li>
-        <li>Events</li>
-        <li>Careers</li>
-        <li>Tours</li>
-        <li>Reviews</li>
-      </ul>
-
-      <h6>HALOALO RESORT</h6>
-      <p>FOLLOW US</p>
-      <ul>
-        <li><i class="fa-brands fa-facebook-f fa-2xs"></i></li>
-        <li><i class="fa-brands fa-instagram fa-2xs"></i></li>
-        <li><i class="fa-solid fa-at fa-2xs"></i></li>
-        <li><i class="fa-brands fa-linkedin fa-2xs"></i></li>
-      </ul>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- FOOTER FIN -->
+</div>
+<!-- GRID PAGE ESTRUCTURE FIN -->
+</body>
+<!-- BODY FIN -->
 </html>
+
