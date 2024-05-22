@@ -235,6 +235,11 @@ form > input {
   margin-bottom: 2rem;
 }
 
+.error {
+  border-color: red;
+  color: red;
+}
+
 #photogallery {
   grid-area: photogallery;
   background-color: black;
