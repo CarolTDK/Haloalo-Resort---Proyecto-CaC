@@ -235,7 +235,7 @@ form > input {
   margin-bottom: 2rem;
 }
 
-.error {
+#error {
   border-color: red;
   color: red;
 }

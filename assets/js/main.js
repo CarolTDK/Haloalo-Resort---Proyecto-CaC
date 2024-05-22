@@ -42,8 +42,7 @@ let validarDatos = (event) => {
 
     validacion = false;
   }
-
-  if (inputMoreInfo.value === "") {
+  if (info.value === "" || info.value === "no-info") {
     let divError = document.querySelector("#error");
     divError.textContent = "Ningún campo debe quedar vacío";
 
@@ -52,7 +51,7 @@ let validarDatos = (event) => {
     validacion = false;
   }
 
-  if (inputCheckbox.value === "") {
+  if (!inputCheckbox.checked) {
     let divError = document.querySelector("#error");
     divError.textContent = "Ningún campo debe quedar vacío";
 
