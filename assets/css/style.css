@@ -115,7 +115,7 @@
 /* availability */
 .availability {
   grid-area: availability;
-  height: 15vh;
+  height: 20vh;
   background-color: rgba(97, 94, 94, 1);
   display: flex;
   flex-direction: row;
@@ -125,6 +125,7 @@
   top: 0;
   flex-wrap: wrap;
   font-size: 3rem;
+  padding: 1.5rem 0;
 }
 
 .btn {
@@ -139,21 +140,22 @@
   background-color: #c5bd08;
   border: none;
   color: white;
-  border-radius: 2.37rem;
-  padding: 1.5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
 }
-
-/* .main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 99vw;
-} */
 
 .main-item-1 {
   background-color: #000000;
   height: 15vh;
   text-align: center;
   align-content: center;
+}
+
+.main-item-1 h3 {
+  color: white;
+  font-size: 3rem;
+  padding: 1.5rem 0;
 }
 
 .submit:hover {
@@ -164,7 +166,7 @@
 /* secciones */
 
 h3 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 #events {
@@ -218,7 +220,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
   width: 100vw;
   padding: 0rem 30rem;
 }
@@ -229,27 +231,27 @@ p {
   justify-content: center;
   align-items: center;
   max-width: max-content;
+  /* height: 40vh; */
+  position: static;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 
 form {
   color: white;
   display: flex;
   flex-direction: column;
-  /* align-content: center; */
-  /* text-align: center; */
-  /* align-self: center; */
   align-items: center;
   justify-content: space-evenly;
-  /* justify-items: center; */
   background-color: rgba(217, 217, 217, 0.6);
   padding: 4rem 9rem;
   margin: 2rem 4rem;
   width: 60.5rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  z-index: 1;
+  height: 70%;
 }
 
 input {
@@ -259,15 +261,15 @@ input {
   border-bottom: 3px solid #fff;
 }
 
-form > input {
+/* form > input {
   line-height: 2.5rem;
-}
+} */
 
 .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .terms {
@@ -276,16 +278,15 @@ form > input {
   margin-bottom: 2rem;
 }
 
-/* CARRRUSEL */
-
 #error {
   border-color: red;
   color: red;
 }
 
+/* CARRRUSEL */
 .Carousel {
   width: 100%;
-  margin: 50px 60px;
+  padding: 50px 60px;
   background-color: rgb(30, 30, 30);
 }
 .Carousel h2 {
