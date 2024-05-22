@@ -179,21 +179,29 @@ p {
   color: white;
 }
 
-section#form {
+/* .section-form {
+  width: 100%;
+} */
+.section-form {
   background-image: url(../imgs/beachform_r.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 85vh;
   width: 100vw;
-  padding-right: 10rem;
-  padding-left: 10rem;
+  padding: 0rem 30rem;
+  /* padding-right: 10rem;
+  padding-left: 10rem; */
 }
+
+/* section#form image {
+  width: 100vw;
+} */
 
 #form {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   max-width: max-content;
 }
@@ -202,13 +210,16 @@ form {
   color: white;
   display: flex;
   flex-direction: column;
+  /* align-content: center; */
+  /* text-align: center; */
+  /* align-self: center; */
   align-items: center;
   justify-content: space-evenly;
+  /* justify-items: center; */
   background-color: rgba(217, 217, 217, 0.6);
   padding: 4rem 9rem;
   margin: 2rem 4rem;
   width: 60.5rem;
-  height: 444rem;
 }
 
 input {
