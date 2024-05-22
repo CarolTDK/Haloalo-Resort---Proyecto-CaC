@@ -123,26 +123,23 @@
   position: sticky;
   top: 0;
   flex-wrap: wrap;
-  /* width: 100vw;
-    background-color: rgba(97, 94, 94, 0.993);
-    padding: 4rem;
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: space-around;
-    align-items: center; */
+  font-size: 3rem;
 }
 
-/* .dropdown-menu {
-    background-color: grey;
-  } */
+.btn {
+  font-size: 2rem;
+}
+
+.dropdown-menu {
+  background-color: grey;
+}
 
 .submit {
   background-color: #c5bd08;
   border: none;
   color: white;
   border-radius: 2.37rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 /* .main {
@@ -163,6 +160,10 @@
   background-color: white;
 }
 
+h3 {
+  font-size: 5rem;
+}
+
 #events {
   background-color: rgba(97, 94, 94, 0.993);
 }
@@ -179,16 +180,11 @@
   background-color: rgba(29, 28, 28, 0.938);
 }
 
-article h3 {
-  color: rgba(197, 189, 8, 0.86);
-}
 p {
   color: white;
+  font-size: 2rem;
 }
 
-/* .section-form {
-  width: 100%;
-} */
 .section-form {
   background-image: url(../imgs/beachform_r.jpg);
   background-position: center;
@@ -197,13 +193,7 @@ p {
   height: 85vh;
   width: 100vw;
   padding: 0rem 30rem;
-  /* padding-right: 10rem;
-  padding-left: 10rem; */
 }
-
-/* section#form image {
-  width: 100vw;
-} */
 
 #form {
   display: flex;
@@ -211,6 +201,10 @@ p {
   justify-content: center;
   align-items: center;
   max-width: max-content;
+}
+
+h4 {
+  font-size: 3rem;
 }
 
 form {
@@ -227,6 +221,7 @@ form {
   padding: 4rem 9rem;
   margin: 2rem 4rem;
   width: 60.5rem;
+  font-size: 2rem;
 }
 
 input {
@@ -370,6 +365,7 @@ footer {
 .item-footer {
   margin-left: 0;
   margin-right: 0;
+  padding: 4rem;
 }
 
 .list-footer {
@@ -394,6 +390,7 @@ iframe {
 
 .footer-item-row3 {
   align-content: center;
+  padding: 4rem;
 }
 
 .item-redes-row1 {
@@ -450,11 +447,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
-  padding: 3rem 0rem;
+  padding: 3.5rem 3rem;
 }
 .caracteristicas h3 {
   text-align: center;
   color: rgba(197, 189, 8, 0.86);
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .caracteristicas img {
