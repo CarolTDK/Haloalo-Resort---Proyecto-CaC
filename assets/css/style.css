@@ -49,7 +49,6 @@
 
 .header-nav-item-row1-1 {
   padding-right: 2vw;
-  font-size: 3vh;
   text-align: center;
   align-content: end;
   text-decoration: none;
@@ -253,19 +252,17 @@ form > input {
   color: red;
 }
 
-
-
-.Carousel{
+.Carousel {
   width: 100%;
   margin: 50px 60px;
   background-color: rgb(30, 30, 30);
 }
-.Carousel h2{
+.Carousel h2 {
   color: #fff;
   font-size: 26px;
   line-height: 38px;
   padding-bottom: 24px;
-  opacity: .9;
+  opacity: 0.9;
   text-transform: uppercase;
   letter-spacing: 10px;
   text-align: center;
@@ -273,7 +270,7 @@ form > input {
 
 /* images */
 
-.slick-list{
+.slick-list {
   position: relative;
   display: flex;
   align-items: center;
@@ -284,15 +281,15 @@ form > input {
   max-width: 90vw;
   overflow: hidden;
 }
-.slick-track{
+.slick-track {
   position: relative;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.slick{
+.slick {
   position: relative;
   width: 375px;
   padding: 0 19px;
@@ -302,22 +299,21 @@ form > input {
   height: 100%;
 }
 
-
-.slick a img{
+.slick a img {
   object-fit: cover;
   height: 300px;
   width: 100%;
   border-radius: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
-  transition: .3s ease-in-out;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
-.slick a img:hover{
-  opacity: .85;
+.slick a img:hover {
+  opacity: 0.85;
 }
 
 /* buttons */
 
-.slick-arrow{
+.slick-arrow {
   border-radius: 30px;
   background-color: #fff;
   position: absolute;
@@ -325,28 +321,24 @@ form > input {
   width: 48px;
   height: 48px;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   border: 0;
   cursor: pointer;
 }
-.slick-arrow:focus{
+.slick-arrow:focus {
   outline: 0;
 }
-.slick-arrow svg{
+.slick-arrow svg {
   width: 12px;
   height: 100%;
-  color: rgba(0,0,0,.7);
+  color: rgba(0, 0, 0, 0.7);
 }
-.slick-prev{
+.slick-prev {
   left: 0px;
 }
-.slick-next{
+.slick-next {
   right: 0px;
 }
-
-
-
-
 
 footer {
   grid-area: footer;
