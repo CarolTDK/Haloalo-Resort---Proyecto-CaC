@@ -56,6 +56,13 @@
   font-size: 2vh;
 }
 
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .nav-item {
   margin: 0 1.4vw;
   font-weight: 500;
