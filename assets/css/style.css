@@ -345,6 +345,7 @@ h2 {
 
 p {
   color: white;
+  margin: 3rem;
 }
 /**********************/
 .caracteristicas {
@@ -353,6 +354,10 @@ p {
   align-items: center;
   grid-template-columns: 600px 50px 600px;
   grid-template-rows: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 3rem 0rem;
 }
 .caracteristicas h3 {
   text-align: center;
