@@ -156,12 +156,12 @@
           <div class="main-item-1">
             <h3>ONLY AT HALOALO RESORT</h3>
           </div>
-          <div id="lista-secciones" class="secciones-flex">
+          <div id="lista-secciones">
             <div id="events" class="caracteristicas">
               <img src="assets/imgs/events.png" alt="Fiesta Hawaiana en la playa" />
               <div></div>
               <div>
-                <div>
+                <div class="secciones-flex">
                   <h3>EVENTS</h3>
                   <p>
                     At Haloalo Resort, we offer extensive event services
@@ -185,7 +185,7 @@
             </div>
 
             <div id="suites" class="caracteristicas">
-              <div>
+              <div class="secciones-flex">
                 <h3>SUITES</h3>
                 <p>
                   Discover the epitome of luxury and comfort in the suites at
@@ -219,7 +219,7 @@
             <div id="dining" class="caracteristicas">
               <img src="assets/imgs/dininganddrinks.jpg" alt="Plato gourmet de mariscos" />
               <div></div>
-              <div>
+              <div class="secciones-flex">
                 <h3>DINING & DRINKS</h3>
                 <p>
                   Embark on a culinary journey at Haloalo Resort, where our
@@ -248,7 +248,7 @@
             </div>
 
             <div id="weddings" class="caracteristicas">
-              <div>
+              <div class="secciones-flex">
                 <h3>WEDDINGS</h3>
                 <p>
                   Celebrate your love story at Haloalo Resort, where we
@@ -291,13 +291,13 @@
             <h4>STAY INFORMED</h4>
             <br />
             <label for="fname">FIRST NAME</label>
-            <input type="text" id="fname" name="fname" />
+            <input type="text" id="fname" name="fname" /><br>          
             <label for="lname">LAST NAME</label>
-            <input type="text" id="lname" name="lname" />
+            <input type="text" id="lname" name="lname" /><br>   
             <label for="email">EMAIL</label>
             <input type="email" id="email" name="email" /><br>
-            <div class="info">
-              <label for="info">More information:</label><br>
+            <div class="info"><br>
+              <label for="info">MORE INFORMATION:</label><br>
               <select name="info" id="info" required>
                 <option value="promotions">Promotions</option>
                 <option value="events">Events</option>
@@ -309,7 +309,7 @@
             </div>
             <div class="terms">
               <input type="checkbox" id="terms" name="terms" value="Terms" />
-              <label for="terms"> Accept Terms and Conditions ...</label><br />
+              <label for="terms"> ACCEPT TERMS AND CONDITIONS ...</label><br />
             </div>
             <div id="error"></div>
             <input class="submit" type="submit" value="SUSCRIBE" />

@@ -106,22 +106,28 @@
   grid-area: 4 / 1 / span 1 / span 8;
 }
 
-/* header {
-    background-image: url(/assets/imgs/Lifeisfun.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  } */
+h1 {
+  font-size: 96px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
 
 /* availability */
 .availability {
   grid-area: availability;
-  height: 20vh;
-  background-color: rgba(97, 94, 94, 1);
+  height: 15vh;
+  background-color: rgb(196, 195, 195);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   flex-wrap: wrap;
 
@@ -158,6 +164,7 @@
   padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .submit:hover {
@@ -166,10 +173,6 @@
 }
 
 /* secciones */
-
-h3 {
-  font-size: 4rem;
-}
 
 #events {
   background-color: rgba(97, 94, 94, 0.993);
@@ -189,7 +192,7 @@ h3 {
 
 p {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .caracteristicas {
@@ -199,14 +202,14 @@ p {
   grid-template-columns: 600px 50px 600px;
   grid-template-rows: 600px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 5rem;
   padding: 3.5rem 3rem;
 }
 .caracteristicas h3 {
   text-align: center;
   color: rgba(197, 189, 8, 0.86);
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
@@ -216,14 +219,20 @@ p {
   object-fit: cover;
 }
 
+.secciones-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /* FORMULARIO */
 .section-form {
   background-image: url(../imgs/beachform_r.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 85vh;
+  width: 99vw;
   padding: 0rem 30rem;
 }
 
@@ -252,7 +261,6 @@ form {
   margin: 2rem 4rem;
   width: 60.5rem;
   font-size: 1.2rem;
-  z-index: 1;
   height: 70%;
 }
 
@@ -272,6 +280,10 @@ input {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem;
+}
+
+input[type=checkbox] {
+  font-size: 10rem;
 }
 
 .terms {
@@ -449,19 +461,7 @@ iframe {
   color: rgb(0, 0, 0);
 }
 
-h1 {
-  font-size: 96px;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-}
-
-h2 {
-  font-size: 40px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-p {
+/* p {
   color: white;
   padding: 3rem;
-}
+} */
