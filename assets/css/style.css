@@ -387,7 +387,7 @@ footer {
 
 .footer-item-row1 {
   align-content: center;
-  font-size: 2.4vh;
+  font-size: 1.3rem;
 }
 
 .item-footer {
@@ -397,7 +397,7 @@ footer {
 }
 
 .list-footer {
-  font-size: 2.4 vh;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
