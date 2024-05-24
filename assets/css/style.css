@@ -67,7 +67,7 @@
 .nav-item {
   margin: 0 1.4vw;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 2vh;
 }
 
 .nav-link {
@@ -78,7 +78,7 @@
   font-family: "Koh Santepheap", serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 6rem;
+  font-size: 12vh;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   align-content: end;
@@ -89,7 +89,7 @@
   font-family: "Koh Santepheap", serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 6rem;
+  font-size: 12vh;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   align-content: center;
@@ -100,7 +100,7 @@
   font-family: "Kiwi Maru", serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 4vh;
   color: rgb(255, 255, 255);
   text-align: center;
   align-content: start;
@@ -108,13 +108,13 @@
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 12vh;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 5vh;
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -132,12 +132,11 @@ h2 {
   position: sticky;
   top: 0;
   flex-wrap: wrap;
-
-  padding: 1.5rem 0;
+  /* padding: 1.5rem 0; */
 }
 
 .btn {
-  font-size: 1.3rem;
+  font-size: 2.5vh;
 }
 
 .dropdown-menu {
@@ -150,7 +149,7 @@ h2 {
   color: white;
   border-radius: 2rem;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 2.5vh;
 }
 
 /* MAIN SECTIONS */
@@ -169,7 +168,7 @@ h2 {
 
 .item-1 h3 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 3.5vh;
   padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -207,15 +206,17 @@ h2 {
 
 p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.1vh;
 }
 
 .caracteristicas {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 600px 50px 600px;
-  grid-template-rows: 600px;
+  grid-template-columns: 60vh 5vh 60vh;
+  grid-template-rows: 60vh;
+  /* grid-template-columns: 600px 50px 600px;
+  grid-template-rows: 600px; */
   display: flex;
   /* flex-wrap: wrap; */
   gap: 5rem;
@@ -224,13 +225,13 @@ p {
 .caracteristicas h3 {
   text-align: center;
   color: rgba(197, 189, 8, 0.86);
-  font-size: 2.2rem;
+  font-size: 3.3vh;
   font-weight: bold;
 }
 
 .caracteristicas img {
-  width: 500px;
-  height: 500px;
+  width: 50vh;
+  height: 50vh;
   object-fit: cover;
 }
 
@@ -322,11 +323,10 @@ input[type="checkbox"] {
 .carousel h2 {
   color: #fff;
   font-size: 26px;
-  line-height: 38px;
   padding-bottom: 24px;
   opacity: 0.9;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   text-align: center;
 }
 
