@@ -96,71 +96,74 @@
       </header>
       <!-- HEADER FIN -->
 
-      <!-- RESERVATION INICIO -->
-      <div class="availability">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            ARRIVE AT
-          </button>
-          <ul class="dropdown-menu">
-            <input type="datetime-local" id="arrival" name="arrival" />
-          </ul>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            DEPART AT
-          </button>
-          <ul class="dropdown-menu">
-            <input type="datetime-local" id="departure" name="departure" />
-          </ul>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            GUESTS
-          </button>
-          <ul class="dropdown-menu">
-            <li><button class="dropdown-item" type="button">One</button></li>
-            <li><button class="dropdown-item" type="button">Two</button></li>
-            <li><button class="dropdown-item" type="button">Three</button></li>
-            <li><button class="dropdown-item" type="button">Four</button></li>
-            <li><button class="dropdown-item" type="button">Five</button></li>
-            <li><button class="dropdown-item" type="button">Six</button></li>
-            <li><button class="dropdown-item" type="button">More</button></li>
-          </ul>
-        </div>
-        <button class="submit" type="submit">BOOK NOW</button>
-      </div>
-      <!-- RESERVATION FIN -->
-
-      <!-- ITEM-1 INICIO -->
+      <!-- MAIN INICIO -->
       <main>
-        <section class="item-1">
-           <h3>ONLY AT HALOALO RESORT</h3>
+
+        <!-- Reservation INICIO -->
+        <div class="availability">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ARRIVE AT
+            </button>
+            <ul class="dropdown-menu">
+              <input type="datetime-local" id="arrival" name="arrival" />
+            </ul>
           </div>
-             <div id="events" class="caracteristicas">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              DEPART AT
+            </button>
+            <ul class="dropdown-menu">
+              <input type="datetime-local" id="departure" name="departure" />
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              GUESTS
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">One</button></li>
+              <li><button class="dropdown-item" type="button">Two</button></li>
+              <li><button class="dropdown-item" type="button">Three</button></li>
+              <li><button class="dropdown-item" type="button">Four</button></li>
+              <li><button class="dropdown-item" type="button">Five</button></li>
+              <li><button class="dropdown-item" type="button">Six</button></li>
+              <li><button class="dropdown-item" type="button">More</button></li>
+            </ul>
+          </div>
+          <button class="submit" type="submit">BOOK NOW</button>
+        </div>
+        <!-- Reservation FIN -->
+
+        <!-- Services INICIO -->      
+          <div class="item-1">
+            <h3>ONLY AT HALOALO RESORT</h3>
+          </div>  
+          <section>
+            <div id="events" class="caracteristicas">
               <img src="assets/imgs/events.png" alt="Fiesta Hawaiana en la playa" />
                 <div>
                 <div class="secciones-flex">
                   <h3>EVENTS</h3>
-                  <span>
+                  <p>
                     At Haloalo Resort, we offer extensive event services
                     designed to surpass the expectations of both groups and
-                    businesses.</span><p>Our team of experts is dedicated to crafting
+                    businesses.Our team of experts is dedicated to crafting
                     unforgettable experiences, whether you're planning a
                     high-level conference, a corporate meeting, or a distinctive
                     social celebration. We provide a diverse range of event
@@ -271,144 +274,145 @@
               <div>
                 <img src="assets/imgs/weddings.jfif" alt="Pareja de novios en la playa" />
               </div>
-            </div>
-          
-        </section>
-      
-      <!-- ITEM-1 FIN -->
-
-      <!-- INFORMATION FORM INICIO -->
-      <div class="section-form">
-        <section id="form">
-          <form action="#" method="get" id="formRegistro">
-            <h4>STAY INFORMED</h4>
-            <br />
-            <label for="fname">FIRST NAME</label>
-            <input type="text" id="fname" name="fname" /><br>          
-            <label for="lname">LAST NAME</label>
-            <input type="text" id="lname" name="lname" /><br>   
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" /><br>
-            <div class="info"><br>
-              <label for="info">MORE INFORMATION:</label><br>
-              <select name="info" id="info" required>
-                <option value="promotions">Promotions</option>
-                <option value="events">Events</option>
-                <option value="all">All</option>
-                <option value="no-info">
-                  Please, don't send me information
-                </option>
-              </select>
-            </div>
-            <div class="terms">
-              <input type="checkbox" id="terms" name="terms" value="Terms" />
-              <label for="terms"> ACCEPT TERMS AND CONDITIONS ...</label><br />
-            </div>
-            <div id="error"></div>
-            <input class="submit" type="submit" value="SUSCRIBE" />
-          </form>
-        </section>
-      </div>
-      <!-- INFORMATION FORM FIN -->
-
-      <!-- GALLERY INICIO -->      
-      <section id="photogallery" class="carousel">
-        <h2>CONNECT WITH HALOALO</h2>
-        <div class="slick-list" id="slick-list">  
-          <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-          </button>
-          <div class="slick-track" id="track">
-            <div class="slick">
-              <div>
-                <a href="/">                
-                  <picture>
-                    <img src="./assets/imgs/1 (1).jpg" alt="Plato gourmet de mariscos">
-                  </picture>
-                </a>
+            </div>          
+          </section>        
+        <!-- Services FIN -->
+        
+        <!-- Information Form INICIO -->
+        <div class="section-form">
+          <section id="form">
+            <form action="#" method="get" id="formRegistro">
+              <h4>STAY INFORMED</h4>
+              <br />
+              <label for="fname">FIRST NAME</label>
+              <input type="text" id="fname" name="fname" /><br>          
+              <label for="lname">LAST NAME</label>
+              <input type="text" id="lname" name="lname" /><br>   
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" /><br>
+              <div class="info"><br>
+                <label for="info">MORE INFORMATION:</label><br>
+                <select name="info" id="info" required>
+                  <option value="promotions">Promotions</option>
+                  <option value="events">Events</option>
+                  <option value="all">All</option>
+                  <option value="no-info">
+                    Please, don't send me information
+                  </option>
+                </select>
               </div>
-            </div>
-            <div class="slick">
-              <div>
-                <a href="/">                   
-                  <picture>
-                    <img src="./assets/imgs/OIP (4).jpg" alt="Playa decorada para casamiento">
-                  </picture>
-                </a>
+              <div class="terms">
+                <input type="checkbox" id="terms" name="terms" value="Terms" />
+                <label for="terms"> ACCEPT TERMS AND CONDITIONS ...</label><br />
               </div>
-            </div>
-            <div class="slick">
-              <div>
-                <a href="/">                        
-                  <picture>
-                    <img src="./assets/imgs/OIP (2) (1).jpg" alt="Mesa servida con fondo de playa al atardecer">
-                  </picture>
-                </a>
-              </div>
-            </div>
-            <div class="slick">
-              <div>
-                <a href="/">                    
-                  <picture>
-                    <img src="./assets/imgs/OIP (1) (1).jpg" alt="Gran piscina rodeada de palmeras">
-                  </picture>
-                </a>
-              </div>
-            </div>
-            <div class="slick">
-              <div>
-                <a href="/">                           
-                  <picture>
-                    <img src="./assets/imgs/suites.jfif" alt="Habitación lujosa de hotel">
-                  </picture>
-                </a>
-              </div>
-            </div>
-            <div class="slick">
-              <div>
-                <a href="/">                      
-                  <picture>
-                    <img src="./assets/imgs/OIP (3) (1).jpg" alt="Plato gourmet con fonde de mar al atardecer">
-                  </picture>
-                </a>
-              </div>
-            </div>
-            <div class="slick">
-              <div>
-                <a href="/">                           
-                  <picture>
-                    <img src="./assets/imgs/4 (1).jpeg" alt="Mozo sosteniendo un copetín gourmet">
-                  </picture>
-                </a>
-              </div>
-            </div>
-            <div class="slick">
-              <div>
-                <a href="/">                      
-                  <picture>
-                    <img src="./assets/imgs/8 (1).jpg" alt="Mujer en bikini dentro de una piscina">
-                  </picture>
-                </a>
-              </div>
-            </div>                
-          </div>
-          <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-          </button>
+              <div id="error"></div>
+              <input class="submit" type="submit" value="SUSCRIBE" />
+            </form>
+          </section>
         </div>
-      </section>
-      <!-- GALLERY FIN --> 
-    </main>
+        <!-- Information Form FIN -->
+
+        <!-- Gallery INICIO -->      
+        <section id="photogallery" class="carousel">
+          <h2>CONNECT WITH HALOALO</h2>
+          <div class="slick-list" id="slick-list">  
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </button>
+            <div class="slick-track" id="track">
+              <div class="slick">
+                <div>
+                  <a href="/">                
+                    <picture>
+                      <img src="./assets/imgs/1 (1).jpg" alt="Plato gourmet de mariscos">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="/">                   
+                    <picture>
+                      <img src="./assets/imgs/OIP (4).jpg" alt="Playa decorada para casamiento">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="/">                        
+                    <picture>
+                      <img src="./assets/imgs/OIP (2) (1).jpg" alt="Mesa servida con fondo de playa al atardecer">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="/">                    
+                    <picture>
+                      <img src="./assets/imgs/OIP (1) (1).jpg" alt="Gran piscina rodeada de palmeras">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="/">                           
+                    <picture>
+                      <img src="./assets/imgs/suites.jfif" alt="Habitación lujosa de hotel">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="/">                      
+                    <picture>
+                      <img src="./assets/imgs/OIP (3) (1).jpg" alt="Plato gourmet con fonde de mar al atardecer">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="/">                           
+                    <picture>
+                      <img src="./assets/imgs/4 (1).jpeg" alt="Mozo sosteniendo un copetín gourmet">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="/">                      
+                    <picture>
+                      <img src="./assets/imgs/8 (1).jpg" alt="Mujer en bikini dentro de una piscina">
+                    </picture>
+                  </a>
+                </div>
+              </div>                
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </button>
+          </div>
+        </section>
+        <!-- Gallery FIN -->
+
+      </main>
+      <!-- MAIN FIN -->
+    
       <!-- FOOTER INICIO -->
       <footer>
         <div class="address">
-        <p>HALOALO RESORT</p>
-        <p>000 KALAKAUA AVENUE</p>
-        <p>HONOLULU, WAIKIKI</p>
-        <p>HAWAII 96815</p>
-             </div>
-                  <!-- Mapa de la ubicación-->
-          <div class="map">
+          <p>HALOALO RESORT</p>
+          <p>000 KALAKAUA AVENUE</p>
+          <p>HONOLULU, WAIKIKI</p>
+          <p>HAWAII 96815</p>
+        </div>
+        <!-- Mapa de la ubicación-->
+        <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14871.122395056307!2d-157.84299801910194!3d21.280150631713024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006df4e5c129af%3A0x4633ddc52a688878!2sWaikiki%2C%20Honolulu%2C%20Haw%C3%A1i%2096815%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1714083493460!5m2!1ses!2sar"
             width="600"
@@ -420,11 +424,9 @@
           >
           </iframe>
         </div>
-        <div class="rrss">
-       
-          <h5>FOLLOW US</h5>
-        
-            <ul class="list-rrss">
+        <div class="rrss">       
+          <h5>FOLLOW US</h5>        
+          <ul class="list-rrss">
             <li>
               <a
                 class="fa-brands fa-facebook-f fa-2xs"
@@ -459,7 +461,7 @@
             </li>
           </ul>
         </div>   
-      </div>   
+      <!-- </div>    -->
       </footer>
       <!-- FOOTER FIN -->
     </div>

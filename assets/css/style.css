@@ -415,6 +415,10 @@ footer {
   justify-content: space-evenly;
 }
 
+  .footer {
+    flex-wrap: nowrap;
+  }
+  
 .address {
   display: flex;
   flex-direction: column;
@@ -427,15 +431,6 @@ footer {
   font-size: 1rem;
 }
 
-.rrss {
-  align-content: center;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
 .map {
   align-content: center;
 }
@@ -443,6 +438,15 @@ footer {
 iframe {
   width: 35vw;
   height: 20vh;
+}
+
+.rrss {
+  align-content: center;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .list-rrss {
@@ -486,7 +490,5 @@ iframe {
     display: none;
   }
 
-  .footer {
-    flex-wrap: nowrap;
-  }
+
 }
