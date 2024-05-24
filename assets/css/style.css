@@ -22,7 +22,8 @@
     "footer";
 }
 
-/* Header */
+/* HEADER */
+
 .header-nav {
   grid-area: header-nav;
   display: grid;
@@ -118,7 +119,8 @@ h2 {
   text-align: center;
 }
 
-/* availability */
+/* RESERVATION */
+
 .availability {
   grid-area: availability;
   height: 15vh;
@@ -151,6 +153,8 @@ h2 {
   font-size: 1rem;
 }
 
+/* MAIN SECTIONS */
+
 .main-item-1 {
   background-color: #000000;
   height: 15vh;
@@ -171,8 +175,6 @@ h2 {
   color: #c5bd08;
   background-color: white;
 }
-
-/* secciones */
 
 #events {
   background-color: rgba(97, 94, 94, 0.993);
@@ -226,6 +228,7 @@ p {
 }
 
 /* FORMULARIO */
+
 .section-form {
   background-image: url(../imgs/beachform_r.jpg);
   background-position: center;
@@ -271,10 +274,6 @@ input {
   border-bottom: 3px solid #fff;
 }
 
-/* form > input {
-  line-height: 2.5rem;
-} */
-
 .info {
   display: flex;
   flex-direction: column;
@@ -297,7 +296,7 @@ input[type=checkbox] {
   color: red;
 }
 
-/* CARRRUSEL */
+/* CARRUSEL */
 .Carousel {
   width: 100%;
   padding: 50px 60px;
