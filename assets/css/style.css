@@ -30,7 +30,7 @@
   grid-template-columns: 99vw;
   grid-template-rows: 15vh 30vh 20vh 20vh;
   height: 85vh;
-  background-image: url(/assets/imgs/Lifeisfun_r.png);
+  background-image: url(../imgs/Lifeisfun_r.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ input {
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  margin-right: 0.6rem;  
+  margin-right: 0.6rem;
 }
 
 #error {
