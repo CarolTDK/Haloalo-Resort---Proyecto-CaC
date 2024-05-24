@@ -16,7 +16,7 @@
   grid-template-areas:
     "header-nav"
     "availability"
-    "main"
+    "item-1"
     "section-form"
     "photogallery"
     "footer";
@@ -154,15 +154,20 @@ h2 {
 }
 
 /* MAIN SECTIONS */
-
-.main-item-1 {
+.item-1 {
   background-color: #000000;
   height: 15vh;
   text-align: center;
   align-content: center;
 }
+/* .main-item-1 {
+  background-color: #000000;
+  height: 15vh;
+  text-align: center;
+  align-content: center;
+} */
 
-.main-item-1 h3 {
+.item-1 h3 {
   color: white;
   font-size: 2.5rem;
   padding: 2rem 0;
@@ -170,6 +175,14 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
+/* .main-item-1 h3 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
 
 .submit:hover {
   color: #c5bd08;
