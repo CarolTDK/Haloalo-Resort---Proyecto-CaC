@@ -411,16 +411,12 @@ input[type="checkbox"] {
 /* FOOTER */
 
 footer {
-  /* grid-area: footer;
-  display: grid;
-  grid-template-columns: 30% 40% 5% auto; */
   background-color: #d9d9d9;
   height: 25vh;
   text-align: center;
   display: flex;
   flex-direction: row;
   gap: 5rem;
-  flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
 }
@@ -429,9 +425,6 @@ footer {
   color: black;
   font-weight: 400;
   font-size: 1.2rem;
-}
-
-.map {
 }
 
 .rrss {
@@ -470,4 +463,27 @@ iframe {
 .fa-solid {
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+
+@media (max-width: 480px) {
+  .caracteristicas img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+  .caracteristicas {
+    flex-wrap: wrap;
+  }
+  .caracteristicas p {
+    display: none;
+  }
+
+  .footer {
+    flex-wrap: nowrap;
+  }
 }
