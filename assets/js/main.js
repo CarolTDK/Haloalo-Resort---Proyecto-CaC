@@ -18,7 +18,7 @@ let validarDatos = (event) => {
 
   if (inputName.value === "") {
     let divError = document.querySelector("#error");
-    divError.textContent = "Ningún campo debe quedar vacío";
+    divError.textContent = "Complete all the fields";
 
     inputName.classList.add("error");
 
@@ -27,7 +27,7 @@ let validarDatos = (event) => {
 
   if (inputLastName.value === "") {
     let divError = document.querySelector("#error");
-    divError.textContent = "Ningún campo debe quedar vacío";
+    divError.textContent = "Complete all the fields";
 
     inputLastName.classList.add("error");
 
@@ -36,7 +36,7 @@ let validarDatos = (event) => {
 
   if (inputEmail.value === "") {
     let divError = document.querySelector("#error");
-    divError.textContent = "Ningún campo debe quedar vacío";
+    divError.textContent = "Complete all the fields";
 
     inputEmail.classList.add("error");
 
@@ -44,7 +44,7 @@ let validarDatos = (event) => {
   }
   if (info.value === "" || info.value === "no-info") {
     let divError = document.querySelector("#error");
-    divError.textContent = "Ningún campo debe quedar vacío";
+    divError.textContent = "Complete all the fields";
 
     inputMoreInfo.classList.add("error");
 
@@ -53,7 +53,7 @@ let validarDatos = (event) => {
 
   if (!inputCheckbox.checked) {
     let divError = document.querySelector("#error");
-    divError.textContent = "Ningún campo debe quedar vacío";
+    divError.textContent = "Complete all the fields";
 
     inputCheckbox.classList.add("error");
 

@@ -29,19 +29,25 @@
   display: grid;
   grid-template-columns: 99vw;
   grid-template-rows: 15vh 30vh 20vh 20vh;
+  grid-template-areas: "logo-hotel";
   height: 85vh;
   background-image: url(../imgs/Lifeisfun_r.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: right;
   align-content: center;
+}
+
+.logo-hotel {
+  width: 20vw;
 }
 
 .header-nav-item-row1 {
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   align-content: center;
+  justify-content: space-between;
   font-size: 2vh;
 }
 
@@ -51,10 +57,15 @@
 
 .header-nav-item-row1-1 {
   padding-right: 2vw;
-  text-align: center;
+  text-align: right;
   align-content: end;
   text-decoration: none;
   font-size: 2vh;
+}
+
+.navbar-toggler {
+  border: none;
+  color: rgba(0, 0, 0, 0);
 }
 
 .navbar-nav {
@@ -132,7 +143,6 @@ h2 {
   position: sticky;
   top: 0;
   flex-wrap: wrap;
-  /* padding: 1.5rem 0; */
 }
 
 .btn {
@@ -159,12 +169,6 @@ h2 {
   text-align: center;
   align-content: center;
 }
-/* .main-item-1 {
-  background-color: #000000;
-  height: 15vh;
-  text-align: center;
-  align-content: center;
-} */
 
 .item-1 h3 {
   color: white;
@@ -174,14 +178,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* .main-item-1 h3 {
-  color: white;
-  font-size: 2.5rem;
-  padding: 2rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
 
 .submit:hover {
   color: #c5bd08;
@@ -204,7 +200,7 @@ h2 {
   background-color: rgba(29, 28, 28, 0.938);
 }
 
-p {
+.caracteristicas p {
   color: white;
   font-size: 2.1vh;
 }
@@ -219,7 +215,7 @@ p {
   grid-template-rows: 600px; */
   display: flex;
   /* flex-wrap: wrap; */
-  gap: 5rem;
+  gap: 1rem;
   padding: 3.5rem 3rem;
 }
 .caracteristicas h3 {
@@ -250,21 +246,33 @@ p {
   background-size: cover;
   height: 85vh;
   width: 99vw;
-  padding: 0rem 30rem;
+  padding: 0vw 21vw;
+  align-content: center;
 }
 
 #form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  max-width: max-content;
+  width: 60vw;
+  /* max-width: max-content; */
   /* height: 40vh; */
   position: static;
 }
 
+#formRegistro {
+  font-size: 2vh;
+  width: 80vw;
+  /* justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center; */
+  margin: 0px;
+}
+
 h4 {
-  font-size: 1.8rem;
+  font-size: 3.3vh;
 }
 
 form {
@@ -274,11 +282,11 @@ form {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(217, 217, 217, 0.6);
-  padding: 4rem 9rem;
+  /* padding: 4rem 9rem;
   margin: 2rem 4rem;
   width: 60.5rem;
-  font-size: 1.2rem;
-  height: 70%;
+  font-size: 1.2rem; */
+  height: 75vh;
 }
 
 input {
@@ -303,8 +311,8 @@ input {
 }
 
 input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 2.3vh;
+  height: 2.3vh;
   margin-right: 0.6rem;
 }
 
@@ -483,6 +491,25 @@ h5 {
   .availability {
     gap: 1rem;
   }
+  .header-nav-item-row2 {
+    font-size: 8vh;
+  }
+  .header-nav-item-row3 {
+    font-size: 8vh;
+  }
+  .header-nav-item-row4 {
+    font-size: 3vh;
+  }
+  #info {
+    width: 60vw;
+    font-size: 1.3vh;
+  }
+  option {
+    width: 60vw;
+  }
+  .terms {
+    font-size: 1.5vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -492,9 +519,9 @@ h5 {
   .caracteristicas {
     flex-wrap: wrap;
   }
-  .caracteristicas p {
+  /* .caracteristicas p {
     display: none;
-  }
+  } */
 
 
 }
