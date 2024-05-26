@@ -250,21 +250,14 @@ h2 {
 #form {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   width: 60vw;
-  /* max-width: max-content; */
-  /* height: 40vh; */
   position: static;
 }
 
 #formRegistro {
   font-size: 2vh;
   width: 80vw;
-  /* justify-content: center;
-  align-self: center;
-  align-items: center;
-  align-content: center; */
   margin: 0px;
 }
 
@@ -279,10 +272,6 @@ form {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(217, 217, 217, 0.6);
-  /* padding: 4rem 9rem;
-  margin: 2rem 4rem;
-  width: 60.5rem;
-  font-size: 1.2rem; */
   height: 75vh;
 }
 
@@ -446,10 +435,8 @@ iframe {
 
 .rrss {
   align-content: center;
-  /* font-size: 1.3rem; */
   display: flex;
   flex-direction: column;
-  /* gap: 1.5rem; */
   justify-content: center;
 }
 
@@ -514,7 +501,6 @@ h5 {
     letter-spacing: 3px;
   }
   .slick-arrow {
-    /* border-radius: 30px; */
     width: 6.3vw;
     height: 6.3vw;
   }
@@ -530,10 +516,9 @@ h5 {
   .slick-next {
     right: 1vw;
   }
-}
-footer {
-  height: 20vh;
-}
+  footer {
+    height: 20vh;
+  }
   .address p {
     font-size: 0.55rem;
   }
@@ -549,8 +534,6 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-}
 
 @media (max-width: 1024px) {
 .caracteristicas {
