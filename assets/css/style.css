@@ -418,14 +418,10 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: row;
-  /* gap: 5rem; */
   align-content: center;
   justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
-
-  .footer {
-    flex-wrap: nowrap;
-  }
 
 .address {
   display: flex;
@@ -433,10 +429,12 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .address p {
   color: black;
   font-weight: 400;
   font-size: 1rem;
+  margin-bottom: 8px;
 }
 
 .map {
@@ -446,11 +444,12 @@ footer {
 iframe {
   width: 35vw;
   height: 20vh;
+  border: 0;
 }
 
 .rrss {
   align-content: center;
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   display: flex;
   flex-direction: column;
   /* gap: 1.5rem; */
@@ -509,6 +508,19 @@ h5 {
   }
   .terms {
     font-size: 1.5vh;
+  }
+    .address p {
+    font-size: 0.55rem;
+  }
+  iframe {
+    width: 30vw;
+    height: 15vh;
+  }
+  h5 {
+    font-size: 0.8rem;
+  }
+    .list-rrss {
+    font-size: 1.5rem;
   }
 }
 
